@@ -1,17 +1,15 @@
 
 import Icon from "@chakra-ui/icon";
 import {  Box, Flex, HStack, Text } from "@chakra-ui/react";
-import BadgeIcon from "./Icon/badge";
-import CheckIcon from "./Icon/checkicon";
-import CircleIcon from "./Icon/circle";
-import StarIcon from "./Icon/star";
+import BadgeIcon from "./badge";
+import CircleIcon from "./circle";
+import StarIcon from "./star";
 
 export default function LastBox(){
     return(
-        <>
-        <Box mt={10}
-        ml={370}>
-            <Flex p={10}>
+
+        <Box ml={350} mr={350}>
+            <Flex p={10} direction={{base:'column',  md:'column', lg:'row'}}>
      <HStack> 
        <Icon as={StarIcon} w={10}
         h={10} 
@@ -28,7 +26,8 @@ export default function LastBox(){
       </HStack>
             </Flex>
         </Box>
-        </>
+
+    
     
     )
 }

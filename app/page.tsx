@@ -1,18 +1,16 @@
 'use client'
-import Header from './header'
+import Header from './Icon/header'
 import {Box, ChakraProvider } from '@chakra-ui/react'
-import Pricing from './pricing'
-import LastBox from './lastbox'
+import NavBar from './components/nav-bar'
+
+import About from './about/page'
+import Hero from './components/hero'
 
 export default function Home() {
   return (
     <ChakraProvider>
-      <Box>
-      <Header/>
-      <Pricing/>
-      <LastBox/>
-      </Box>
-  
+    <NavBar/>
+    <Hero/>
     </ChakraProvider>
   )
-}
+} 
