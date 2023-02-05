@@ -33,7 +33,7 @@ export default function Hero() {
             w={'150%'}
             h={'150%'}
             position={'absolute'}
-            top={'-20%'}
+            top={'50%'}
             left={0}
             zIndex={-1}
             color={useColorModeValue('red.50', 'red.400')}
@@ -69,8 +69,8 @@ export default function Hero() {
 
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Heading
-            lineHeight={1.1}
-            fontWeight={600}
+            lineHeight={1}
+            fontWeight={800}
             fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
             <Text
               as={'span'}
@@ -82,17 +82,17 @@ export default function Hero() {
                 position: 'absolute',
                 bottom: 1,
                 left: 0,
-                bg: 'red.400',
+                bg: '#55FC8A',
                 zIndex: -1,
               }}>
               Presidential Initiative
             </Text>
             <br />
-            <Text as={'span'} color={'red.400'}>
+            <Text as={'span'} color={'#55FC8A'}>
               for Artificial Intelligence & Computing (PIAIC)
             </Text>
           </Heading>
-          <Text color={'gray.500'}>
+          <Text color={'gray.800'} fontWeight={'md'}>
             The mission of PIAIC is to reshape Pakistan by revolutionizing education, research,
             and business by adopting latest, cutting-edge technologies. Experts are calling this
             the 4th industrial revolution. We want Pakistan to become a global hub for AI, data science,
@@ -107,18 +107,18 @@ export default function Hero() {
               fontWeight={'normal'}
               px={6}
               colorScheme={'red'}
-              bg={'red.400'}
+              bg={'#152A0B'}
               _hover={{ bg: 'red.500' }}>
               Get started
             </Button>
-            <Button
+            {/* <Button
               rounded={'full'}
               size={'lg'}
               fontWeight={'normal'}
               px={6}
               leftIcon={<PlayIcon h={4} w={4} color={'gray.300'} />}>
               How It Works
-            </Button>
+            </Button> */}
           </Stack>
         </Stack>
       </Stack>

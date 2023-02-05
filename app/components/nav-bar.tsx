@@ -30,8 +30,8 @@ import {
     return (
       <Box>
         <Flex
-          bg={useColorModeValue('white', 'gray.800')}
-          color={useColorModeValue('gray.600', 'white')}
+          bg={useColorModeValue('#152A0B', 'white')}
+          color={useColorModeValue('white', 'gray-600')}
           minH={'60px'}
           py={{ base: 2 }}
           px={{ base: 4 }}
@@ -83,7 +83,7 @@ import {
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'pink.400'}
+              bg={'#55FC8A'}
               href={'https://portal.piaic.org/signup'}
               _hover={{
                 bg: 'pink.300',
@@ -101,8 +101,8 @@ import {
   }
   
   const DesktopNav = () => {
-    const linkColor = useColorModeValue('gray.600', 'gray.200');
-    const linkHoverColor = useColorModeValue('gray.800', 'white');
+    const linkColor = useColorModeValue('white', 'gray.800');
+    const linkHoverColor = useColorModeValue('gray.200', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
   
     return (
